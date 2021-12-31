@@ -1,6 +1,6 @@
 # demo-se-nomad
 
-Thanks for your consideration. The following steps facilitate a working demo that a HashiCOrp Solutions Engineer can use to demonstrate Nomad workloads. This repos assumes you've also cloned [HashiQube](https://servian.github.io/hashiqube/#/).
+Thanks for your consideration. The following steps facilitate a working demo that a HashiCorp Solutions Engineer can use to demonstrate Nomad workloads. This repos assumes you've also cloned [HashiQube](https://servian.github.io/hashiqube/#/). The source code for the jobs reside at: https://github.com/acornies/demo-go-api-fiber.
 
 WIP
 
@@ -27,6 +27,6 @@ vault token create -policy nomad-server -period 72h -orphan
 # vagrant up --provision-with postgresql
 
 # run jobs
-nomad job run go-api.hcl
-nomad job run go-batch.hcl
+nomad job run jobs/go-api.hcl
+nomad job run jobs/go-batch.hcl
 ```

@@ -25,10 +25,6 @@ vault token create -policy nomad-server -period 72h -orphan
 
 # vagrant up --provision-with nomad
 # vagrant up --provision-with postgresql
-
-# run jobs
-nomad job run jobs/go-api.hcl
-nomad job run jobs/go-batch.hcl
 ```
 
 There are a few modifications to the postgresql Vagrant target:
